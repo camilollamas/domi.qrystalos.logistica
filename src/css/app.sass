@@ -1,0 +1,53 @@
+// app global css in Sass form
+.small-screen-only
+  @media (max-width: $breakpoint-xs-max)
+    display: block
+  @media (min-width: $breakpoint-sm-min)
+    display: none
+
+.large-screen-only
+  @media (max-width: $breakpoint-xs-max)
+    display: none
+  @media (min-width: $breakpoint-sm-min)
+    display: block
+
+.constrain
+  max-width: 975px
+  margin: 0 auto
+
+.constrain-more
+  max-width: 600px
+  margin: 0 auto
+
+.doc-note 
+  background-color: #eee
+  border-radius: 4px
+  margin: 16px 0
+  padding: 16px 24px
+  font-size: 1em
+  border-width: 0 5px
+  border-style: solid
+  border-color: #9e9e9e
+  letter-spacing: 0.5px
+
+.doc-note__title 
+  font-weight: 500
+
+.doc-note>p, .doc-note>ul 
+  margin-bottom: 0
+
+.doc-note--tip 
+  background-color: #c1f4cd
+  border-color: #21ba45
+
+.doc-note--info 
+  background-color: #e3f2fd
+  border-color: #2196f3
+
+.doc-note--warning 
+  background-color: #ffe6e6
+  border-color: #ff6666
+
+.doc-note--danger 
+    background-color: #ffc0c6
+    border-color: #c10015
